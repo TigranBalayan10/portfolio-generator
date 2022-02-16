@@ -1,6 +1,10 @@
-const profileDataArgs = process.argv.slice(2, process.argv.lenght);
+const profileDataArgs = process.argv.slice(2);
 
 const printProfileData = profileDataArr => {
+  // This...
+  for (let i = 0; i < profileDataArr.length; i += 1) {
+    console.log(profileDataArr[i]);
+  }
 
   console.log('================');
 
@@ -9,5 +13,3 @@ const printProfileData = profileDataArr => {
 };
 
 printProfileData(profileDataArgs);
-
-
